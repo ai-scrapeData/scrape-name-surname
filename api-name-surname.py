@@ -19,7 +19,7 @@ class AllProfile(Resource):
         try:
             query = {}
             projection = {'_id':False}
-            scoreSportData = mongo.db.name_surname.find(query, projection)
+            scoreSportData = mongo.db.profile.find(query, projection)
             listData = []
             for element in scoreSportData:
                 listData.append(element)
