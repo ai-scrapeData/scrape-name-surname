@@ -96,8 +96,8 @@ def email_password():
         print(email)
         print(password)
         dict_profile = {
-            'name':all_name[element],
-            'surname':list_surname[element],
+            'name':all_name[element].lower(),
+            'surname':list_surname[element].lower(),
             'email':email,
             'password':password,
             'photo':list_photo[element]
